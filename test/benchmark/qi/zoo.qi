@@ -1,0 +1,31 @@
+类 Zoo「
+  初始化（）「
+    这。aar变量k  = 1
+    这。baboon   = 1
+    这。cat      = 1
+    这。donkey   = 1
+    这。elephant = 1
+    这。fox      = 1
+  」
+  ant（）  「 返回 这。aar变量k 」
+  banana（）「 返回 这。baboon 」
+  tuna（） 「 返回 这。cat 」
+  hay（）  「 返回 这。donkey 」
+  grass（）「 返回 这。elephant 」
+  mouse（）「 返回 这。fox 」
+」
+
+变量 zoo = Zoo（）
+变量 sum = 0
+变量 start = 系统。时钟（）
+而（sum 小 10000000）「
+  sum = sum + zoo。ant（）
+            + zoo。banana（）
+            + zoo。tuna（）
+            + zoo。hay（）
+            + zoo。grass（）
+            + zoo。mouse（）
+」
+
+系统。打印行（sum）
+系统。打印行（系统。时钟（）- start）

@@ -1,0 +1,17 @@
+类 Base「
+  toString（）「 返回 "Base" 」
+」
+
+类 Derived：Base「
+  getClosure（）「
+    功能 closure（）「
+      返回 超。toString（）
+    」
+    返回 closure
+  」
+
+  toString（）「 返回 "Derived" 」
+」
+
+变量 closure = Derived（）。getClosure（）
+系统。打印行（closure（）） // 期待：Base

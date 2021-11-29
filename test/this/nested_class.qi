@@ -1,0 +1,20 @@
+类 Outer「
+  method（）「
+    系统。打印行（这） // 期待：Outer 实例
+
+    功能 f（）「
+      系统。打印行（这） // 期待：Outer 实例
+
+      类 Inner「
+        method（）「
+          系统。打印行（这） // 期待：Inner 实例
+        」
+      」
+
+      Inner（）。method（）
+    」
+    f（）
+  」
+」
+
+Outer（）。method（）

@@ -1,0 +1,26 @@
+类 A「
+  say（）「
+    系统。打印行（"A"）
+  」
+」
+
+类 B：A「
+  getClosure（）「
+    功能 closure（）「
+      超。say（）
+    」
+    返回 closure
+  」
+
+  say（）「
+    系统。打印行（"B"）
+  」
+」
+
+类 C：B「
+  say（）「
+    系统。打印行（"C"）
+  」
+」
+
+C（）。getClosure（）（） // 期待：A

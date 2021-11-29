@@ -1,0 +1,7 @@
+// Tests that we correctly track the line info across multiline strings.
+变量 a = "1
+2
+3
+"
+
+err // // 期待运行时错误：未定义的变量「err」。
